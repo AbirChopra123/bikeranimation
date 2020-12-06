@@ -1,0 +1,48 @@
+.full {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#LeftWheel, #RightWheel {
+    animation:abc  2s linear infinite ;
+    transform-box: fill-box;
+    transform-origin: center;
+   
+}
+
+#Biker {
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#Hat {
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes abc {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes bike {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(20deg);
+    }
+}
+
+@keyframes hat {
+    from {
+        transform: translateY(0px) ;   }
+    to {
+        transform: translateY(20px);
+    }
+}
